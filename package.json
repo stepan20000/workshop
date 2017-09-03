@@ -1,19 +1,26 @@
 {
-  "name": "RD labs FED Workshop",
+  "name": "rd_labs_fed_workshop",
   "version": "0.0.0",
   "description": "Simple workshop project",
   "main": "Gruntfile.js",
   "dependencies": {},
   "devDependencies": {
-    "assemble-less": "^0.7.0",
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^2.2.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-watch": "~0.6.1"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack -p"
   },
   "repository": "",
   "author": "Yevhen Isakov",
