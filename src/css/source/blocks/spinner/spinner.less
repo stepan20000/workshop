@@ -1,0 +1,60 @@
+@spinner-size: 18px;
+
+.spinner {
+  width: @spinner-size;
+  height: @spinner-size;
+  background: @default-text;
+  border-radius: 50%;
+  border: 2px solid @default-text;
+
+  &__pie {
+
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: @white;
+
+    &_spinner {
+      border-radius: (@spinner-size * 0.5) 0 0 (@spinner-size * 0.5);
+      z-index: 200;
+      border-right: none;
+      animation: rota 5s linear infinite;
+    }
+
+    &_filler {
+      border-radius: 0 (@spinner-size * 0.5) (@spinner-size * 0.5) 0;
+      z-index: 100;
+      border-left: none;
+      animation: fill 5s steps(1, end) infinite;
+      left: 50%;
+      opacity: 0;
+    }
+  }
+
+  &__mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 300;
+    opacity: 1;
+    background: inherit;
+    animation: mask 5s steps(1, end) infinite;
+    border-radius: (@spinner-size * 0.5) 0 0 (@spinner-size * 0.5);
+  }
+}
+
+@keyframes rota {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fill {
+  0%        { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+@keyframes mask {
+  0%        { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}

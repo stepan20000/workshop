@@ -1,13 +1,10 @@
 .carousel {
-
-
+    position: relative;
     border-bottom: 5px solid @red;
 
-    &__image {
-
-        &-wrapper {
+    &__image-wrapper {
             float: left;
-            }
+        margin-right: 20px;
         }
 
     &__article {
@@ -17,26 +14,23 @@
 
     &__title {
         color: @header-text-color;
+        font-size: 1.75rem;
+        font-family: 'PT Serif', serif;
         }
 
     &__text {
         margin-top: 20px;
+        font-size: 0.82rem;
+        width: 97%;
         }
 
     &__control {
         position: absolute;
+        top: 190px;
+        right: 30px;
+        width: 110px;
+        height: 32px;
         }
-
-    &-counter {
-        &-item {
-            &-current {}
-            &-static {}
-            }
-
-
-        }
-
-    &__spinner {}
 
     &__button {
         position: relative;
@@ -51,7 +45,7 @@
         &::after {
             content: '';
             position: absolute;
-            border-bottom: 3px solid @red;
+            border-bottom: 5px solid @red;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             height: 0;
@@ -63,11 +57,14 @@
             padding: 0;
             }
 
-        &-container {}
-
         &_prev {
+            top: -19px;
+            left: 5px;
+            transform: rotate(90deg);
+
             &::before {
                 transform: rotate(-45deg);
+                left: 16px;
                 }
 
             &::after {
@@ -77,8 +74,12 @@
             }
 
         &_next {
+            top: 1.5px;
+            left: 84px;
+            transform: rotate(270deg);
             &::before {
                 transform: rotate(45deg);
+                left: -4px;
                 }
 
             &::after {
@@ -86,7 +87,30 @@
                 }
             }
         }
+    &__button-container {
+        position: absolute;
+        top: 0;
+        }
 
-
+    &__spiner {
+        left: 70px;
+        top: -1px;
+        position: absolute;
+        }
     }
+
+.counter {
+
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 24px;
+
+    &__item {
+        &-current {
+        }
+        &-static {
+        }
+    }
+}
 
