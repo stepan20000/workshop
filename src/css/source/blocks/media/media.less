@@ -1,6 +1,40 @@
 .media {
+    padding-top: 14px;
 
-  &__list {
-    .list-reset();
-  }
+    &__list {
+        .list-reset();
+    }
+
+    &__item {
+        margin-bottom: 19px;
+
+      &:hover .media__title {
+        color: @default-link;
+      }
+
+    }
+
+    &__link {
+
+    }
+
+    &__figure {
+        margin-bottom: -5px;
+        position: relative;
+    }
+
+    &__photo-icon {
+        position: absolute;
+        bottom: 13px;
+        left: 9px;
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        color: @default-text;
+        font-weight: bold;
+        letter-spacing: -0.025rem;
+        line-height: 1.3rem;
+        margin: 0;
+    }
 }
