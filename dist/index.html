@@ -6,16 +6,16 @@
 <head>
 
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width" />
 
 	<title>Index of - FED Workshop</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
 <div class="l-container">
-	<div class="l-wrapper">
+	<div class="l-wrapper g-clearfix">
 		<div class="l-main">
-			<div class="block hot-themes g-clearfix">
+			<header class="block hot-themes g-clearfix">
 				<ul class="hot-themes__list">
 					<li class="hot-themes__title">
 						<span>Hot themes</span>
@@ -26,17 +26,26 @@
 					<li class="hot-themes__item">
 						<a href="#" class="hot-themes__link">El’ Classico</a>
 					</li>
+					<li class="hot-themes__item">
+						<a href="#" class="hot-themes__link">El’ Classico</a>
+					</li>
+					<li class="hot-themes__item">
+						<a href="#" class="hot-themes__link">El’ Classico</a>
+					</li>
+					<li class="hot-themes__item">
+						<a href="#" class="hot-themes__link">Одинадцатикласница даже две</a>
+					</li>
 				</ul>
-			</div>
+			</header>
 
-			<div class="block carousel g-clearfix">
+			<section class="block carousel g-clearfix">
 				<div class="carousel__image-wrapper">
 					<img src="../src/i/my-cutting/carousel-big-image.png" alt="Jurgen Klopp" class="carousel__image">
 				</div>
 				<div class="carousel__article">
-					<h1 class="carousel__title">
+					<h2 class="carousel__title">
 						Jurgen Klopp makes a sexy Liverpool
-					</h1>
+					</h2>
 					<p class="carousel__text">
 						Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
 					</p>
@@ -58,33 +67,63 @@
 					</div>
 				</div>
 
-			</div>
+			</section>
 
 
-			<div class="block main-news">
+			<section class="block main-news">
 				<div class="block-title main-news__title">
 					<h2 class="block-title__heading">Main News</h2>
 					<div class="block-title__line"></div>
 				</div>
 				<ul class="main-news__list">
-					<li class="main-news__item"><a href="#" class="main-news__link">
-						<figure class="main-news__figure"><img src="../src/i/my-cutting/main-news/fifa-ballon.png" alt="The FIFA Ballon" class="main-news__image"></figure>
-						<p class="main-news__title">The FIFA Ballon d'Or is an annual association football award given by FIFA</p>
-					</a></li>
-					<li class="main-news__item"><a href="#" class="main-news__link">
-						<figure class="main-news__figure"><img src="../src/i/my-cutting/main-news/messi-ballons.png" alt="Messi got some balloons" class="main-news__image"></figure>
-						<p class="main-news__title">Messi got some balloons</p>
-					</a></li>
-					<li class="main-news__item"><a href="#" class="main-news__link">
-						<figure class="main-news__figure"><img src="../src/i/my-cutting/main-news/cr.png" alt="CR7 also have some ball" class="main-news__image"></figure>
-						<p class="main-news__title">CR7 also have some balls, but not so much</p>
-					</a></li>
-					<li class="main-news__item"><a href="#" class="main-news__link">
-						<figure class="main-news__figure"><img src="../src/i/my-cutting/main-news/ribery.png" alt="Ribery got vase" class="main-news__image"></figure>
-						<p class="main-news__title">Ribery got vase!</p>
-					</a></li>
+					<li class="main-news__item">
+						<a href="#" class="main-news__link">
+							<figure class="main-news__figure">
+								<img src="../src/i/my-cutting/main-news/fifa-ballon.png"
+									 alt="The FIFA Ballon" class="main-news__image">
+							</figure>
+							<p class="main-news__title">
+								The FIFA Ballon d'Or is an annual association football award given by FIFA
+							</p>
+						</a>
+					</li>
+					<li class="main-news__item">
+						<a href="#" class="main-news__link">
+							<figure class="main-news__figure">
+								<img src="../src/i/my-cutting/main-news/messi-ballons.png"
+									 alt="Messi got some balloons" class="main-news__image">
+							</figure>
+							<p class="main-news__title">
+								Messi got some balloons
+							</p>
+						</a>
+					</li>
+					<li class="main-news__item">
+						<a href="#" class="main-news__link">
+							<figure class="main-news__figure">
+								<img src="../src/i/my-cutting/main-news/cr.png"
+									 alt="CR7 also have some ball" class="main-news__image">
+							</figure>
+							<p class="main-news__title">
+								CR7 also have some balls, but not so much
+							</p>
+						</a>
+					</li>
+					<li class="main-news__item">
+						<a href="#" class="main-news__link">
+							<figure class="main-news__figure">
+								<img src="../src/i/my-cutting/main-news/ribery.png"
+									 alt="Ribery got vase" class="main-news__image">
+							</figure>
+							<p class="main-news__title">
+								Ribery got vase!
+								<img class="icon icon_photo" src="../src/i/not-my-cutting/small-photo-gray.png"
+									 alt="Icon photo">
+							</p>
+						</a>
+					</li>
 				</ul>
-			</div>
+			</section>
 			<div class="l-main-left">
 				<div class="news">
 					<div class="block-title news__title">
@@ -100,6 +139,7 @@
 						<li class="news__item">
 							<a href="#" class="news__link">
 								Swedes indebted to talismanic Ibrahimovic
+								<small>marca.com</small>
 							</a>
 						</li>
 						<li class="news__item">
@@ -110,11 +150,6 @@
 						<li class="news__item">
 							<a href="#" class="news__link">
 								Ancelotti: "Premier League return is my no. 1 choice
-							</a>
-						</li>
-						<li class="news__item">
-							<a href="#" class="news__link">
-
 							</a>
 						</li>
 						<li class="news__item">
@@ -130,8 +165,10 @@
 						<li class="news__item">
 							<a href="#" class="news__link">
 								Raúl bids goodbye in style
-								<img class="icon icon_photo" src="" alt="">
-								<img class="icon icon_video" src="" alt="">
+								<img class="icon icon_photo" src="../src/i/not-my-cutting/small-photo-gray.png"
+									 alt="Icon photo">
+								<img class="icon icon_video" src="../src/i/not-my-cutting/small-video-gray.png"
+									 alt="Icon video">
 							</a>
 						</li>
 						<li class="news__item">
@@ -166,6 +203,8 @@
 									<p class="news__figcaption">
 										Zlatan Ibrahimovic on target as Sweden qualify
 										with draw in Denmark
+										<img class="icon icon_photo"
+											 src="../src/i/not-my-cutting/small-photo-gray.png" alt="Icon photo">
 									</p>
 							</a>
 						</li>
@@ -177,6 +216,8 @@
 						<li class="news__item">
 							<a href="#" class="news__link">
 								Ecuador stay perfect as Argentina, Brazil win
+								<img class="icon icon_video" src="../src/i/not-my-cutting/small-video-gray.png"
+									 alt="Icon video">
 							</a>
 						</li>
 						<li class="news__item">
@@ -200,7 +241,7 @@
 							<a href="#" class="media__link">
 								<figure class="media__figure">
 									<img src="../src/i/my-cutting/big-cubok.png" alt="Big cubok">
-									<img src="../src" alt="Photo icon" class="media__photo-icon">
+									<img src="../src/i/not-my-cutting/red_photo.png" alt="Photo icon" class="media__photo-icon">
 								</figure>
 								<p class="media__title">
 									Here is how Leage Champions trophy looks like
@@ -211,6 +252,7 @@
 							<a href="#" class="media__link">
 								<figure class="media__figure">
 									<img src="../src/i/my-cutting/casillas.png" alt="Casillas">
+									<img src="../src/i/not-my-cutting/red_photo.png" alt="Photo icon" class="media__photo-icon">
 								</figure>
 							<p class="media__title">
 								Casillas got some piece of paper
@@ -221,6 +263,7 @@
 								<a href="#" class="media__link">
 									<figure class="media__figure">
 										<img src="../src/i/my-cutting/girls.png" alt="girls">
+										<img src="../src/i/not-my-cutting/red_photo.png" alt="Photo icon" class="media__photo-icon">
 									</figure>
 								<p class="media__title">
 									Bayern Munich vs Barcelona. Fangirls :)
