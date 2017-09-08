@@ -43,8 +43,8 @@
 
     &__button {
         position: relative;
-        width: 12px;
-        height: 24px;
+        width: 0;
+        height: 0;
 
         border: 0;
         padding: 0;
@@ -67,32 +67,38 @@
             }
 
         &_prev {
-            top: -19px;
+            top: 0;
             left: 5px;
             transform: rotate(90deg);
 
             &::before {
                 transform: rotate(-45deg);
-                left: 16px;
+                left: -12px;
+                top: -6px;
                 }
 
             &::after {
                 transform: rotate(45deg);
+                left: -22px;
+                top: -6px;
                 }
 
             }
 
         &_next {
-            top: -1.5px;
+            top: 0;
             left: 81px;
             transform: rotate(270deg);
             &::before {
                 transform: rotate(45deg);
-                left: -4px;
+                left: -7px;
+                top: 15px;
                 }
 
             &::after {
                 transform: rotate(-45deg);
+                left: 3px;
+                top: 15px;
                 }
             }
         }
